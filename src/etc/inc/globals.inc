@@ -1,55 +1,4 @@
 <?php
-/*
- * globals.inc
- *
- * part of pfSense (https://www.pfsense.org)
- * Copyright (c) 2004-2016 Electric Sheep Fencing, LLC
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * 1. Redistributions of source code must retain the above copyright notice,
- *    this list of conditions and the following disclaimer.
- *
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in
- *    the documentation and/or other materials provided with the
- *    distribution.
- *
- * 3. All advertising materials mentioning features or use of this software
- *    must display the following acknowledgment:
- *    "This product includes software developed by the pfSense Project
- *    for use in the pfSense® software distribution. (http://www.pfsense.org/).
- *
- * 4. The names "pfSense" and "pfSense Project" must not be used to
- *    endorse or promote products derived from this software without
- *    prior written permission. For written permission, please contact
- *    coreteam@pfsense.org.
- *
- * 5. Products derived from this software may not be called "pfSense"
- *    nor may "pfSense" appear in their names without prior written
- *    permission of the Electric Sheep Fencing, LLC.
- *
- * 6. Redistributions of any form whatsoever must retain the following
- *    acknowledgment:
- *
- * "This product includes software developed by the pfSense Project
- * for use in the pfSense software distribution (http://www.pfsense.org/).
- *
- * THIS SOFTWARE IS PROVIDED BY THE pfSense PROJECT ``AS IS'' AND ANY
- * EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
- * PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE pfSense PROJECT OR
- * ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
- * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
- * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- * OF THE POSSIBILITY OF SUCH DAMAGE.
- */
 
 // Global defines
 
@@ -66,7 +15,7 @@ $g = array(
 	"base_packages" => "siproxd",
 	"event_address" => "unix:///var/run/check_reload_status",
 	"factory_shipped_username" => "admin",
-	"factory_shipped_password" => "pfsense",
+	"factory_shipped_password" => "admin1",
 	"upload_path" => "/root",
 	"dhcpd_chroot_path" => "/var/dhcpd",
 	"unbound_chroot_path" => "/var/unbound",
@@ -82,22 +31,22 @@ $g = array(
 	"cf_path" => "/cf",
 	"cf_conf_path" => "/cf/conf",
 	"www_path" => "/usr/local/www",
-	"xml_rootobj" => "pfsense",
+	"xml_rootobj" => "nsw",
 	"admin_group" => "admins",
-	"product_name" => "pfSense",
-	"product_version" => trim(file_get_contents("/etc/version"), " \n"),
-	"product_copyright" => "Electric Sheep Fencing LLC",
-	"product_copyright_url" => "https://pfsense.org/license",
-	"product_copyright_years" => "2004 - ".date("Y"),
-	"product_website" => "www.pfsense.org",
-	"product_website_footer" => "https://www.pfsense.org/?gui=bootstrap",
-	"product_email" => "coreteam@pfsense.org",
-	"hideplatform" => false,
-	"hidebackupbeforeupgrade" => false,
-	"disablehelpmenu" => false,
-	"disablehelpicon" => false,
-	"disablecrashreporter" => false,
-	"crashreporterurl" => "https://crashreporter.pfsense.org/crash_reporter.php",
+	"product_name" => "nsw",
+	"product_version" => "1.5",
+	"product_copyright" => "NES@CSTDIV",
+	"product_copyright_url" => " ",
+	"product_copyright_years" => "2013-2018",
+	"product_website" => " ",
+	"product_website_footer" => " ",
+	"product_email" => "usmabd@cs.org",
+	"hideplatform" => true,
+	"hidebackupbeforeupgrade" => true,
+	"disablehelpmenu" => true,
+	"disablehelpicon" => true,
+	"disablecrashreporter" => true,
+	"crashreporterurl" => "https://crashreporter.org/crash_reporter.php",
 	"debug" => false,
 	"latest_config" => "15.5",
 	"nopkg_platforms" => array("cdrom"),
@@ -110,8 +59,8 @@ $g = array(
 	"services_dhcp_server_enable" => true,
 	"wireless_regex" => "/^(ndis|wi|ath|an|ral|ural|iwi|wlan|rum|run|bwn|zyd|mwl|bwi|ipw|iwn|malo|uath|upgt|urtw|wpi)/",
 	"help_base_url" => "/help.php",
-	"pkg_prefix" => "pfSense-pkg-",
-	"default_timezone" => "Etc/UTC",
+	"pkg_prefix" => "nsw-pkg-",
+	"default_timezone" => "Asia/Karachi",
 	"language" => "en_US"
 );
 

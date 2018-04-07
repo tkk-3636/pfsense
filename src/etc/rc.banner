@@ -72,7 +72,7 @@ if (!$hideplatform) {
 	$platformbanner = " {$platform}";
 }
 
-print "*** Welcome to {$product} {$g['product_version_string']} ({$machine}{$platformbanner}) on {$hostname} ***\n";
+print "*** Welcome to NSW ***\n";
 
 $iflist = get_configured_interface_with_descr(false, true);
 foreach ($iflist as $ifname => $friendly) {

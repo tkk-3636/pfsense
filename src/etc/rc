@@ -235,14 +235,14 @@ hideplatform=$(/usr/local/bin/php -n /usr/local/sbin/read_global_var hideplatfor
 if [ "$hideplatform" = "true" ]; then
 	platformbanner="" # hide the platform
 else
-	platformbanner=" on the '${PLATFORM}' platform"
+	platformbanner=" on the NSW@USM_ABD platform"
 fi
 
 echo
 cat /etc/ascii-art/pfsense-logo-small.txt
 echo
 echo
-echo "Welcome to ${product} ${version}${version_patch}${platformbanner}..."
+echo "Welcome to NSW@USM_ABD..."
 echo
 
 /sbin/conscontrol mute off >/dev/null

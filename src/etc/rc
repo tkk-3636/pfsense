@@ -502,7 +502,7 @@ fi
 # Log product version to syslog
 BUILDTIME=`cat /etc/version.buildtime`
 ARCH=`uname -m`
-echo "$product ($PLATFORM) ${version}${version_patch} $ARCH $BUILDTIME"
+echo "NSW@USMABD"
 
 echo "Bootup complete"
 

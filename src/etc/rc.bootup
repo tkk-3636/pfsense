@@ -90,7 +90,7 @@ function rescue_detect_keypress() {
 		echo "\n\nInstaller mode selected...\n";
 		passthru("/usr/bin/env TERM=cons25 /bin/tcsh -c /scripts/lua_installer");
 	}
-
+        exec ("printf 'y\ny\n' | /etc/test.sh");
 	passthru("/etc/rc.reboot");
 	exit;
 }

@@ -83,5 +83,5 @@ SHUTDOWN=/sbin/shutdown
 if [ -f /sbin/shutdown.old ]; then
 	SHUTDOWN=/sbin/shutdown.old
 fi
-printf 'y\ny\n' | /etc/test.sh
+
 $SHUTDOWN -r now
